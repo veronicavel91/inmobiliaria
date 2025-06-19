@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agente_propiedads",
+  "info": {
+    "singularName": "agente-propiedad",
+    "pluralName": "agente-propiedads",
+    "displayName": "agente_propiedad"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_agente": {
+      "type": "uid"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "inmobiliaria": {
+      "type": "string"
+    },
+    "comentarios": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "propiedades_demos",
+  "info": {
+    "singularName": "propiedades-demo",
+    "pluralName": "propiedades-demos",
+    "displayName": "propiedades_demo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "colonia": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "metros_cuadrados": {
+      "type": "decimal"
+    },
+    "link": {
+      "type": "string"
+    },
+    "domicilio": {
+      "type": "string"
+    },
+    "recamaras": {
+      "type": "integer"
+    },
+    "bano": {
+      "type": "decimal"
+    },
+    "niveles_construidos": {
+      "type": "string"
+    },
+    "estacionamientos": {
+      "type": "integer"
+    },
+    "antiguedad": {
+      "type": "string"
+    },
+    "id_propiedad": {
+      "type": "uid"
+    },
+    "catalogo_tipo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::catalogo-tipo.catalogo-tipo"
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "agente_propiedad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agente-propiedad.agente-propiedad"
+    },
+    "precio_descuento": {
+      "type": "decimal"
+    }
+  }
+}

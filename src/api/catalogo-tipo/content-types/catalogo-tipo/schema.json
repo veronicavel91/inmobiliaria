@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogo_tipos",
+  "info": {
+    "singularName": "catalogo-tipo",
+    "pluralName": "catalogo-tipos",
+    "displayName": "catalogo_tipo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}
